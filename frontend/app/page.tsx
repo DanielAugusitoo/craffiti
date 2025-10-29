@@ -289,7 +289,7 @@ export default function Home() {
               <div style={{ fontSize: "4rem", marginBottom: "20px" }}>🎨</div>
               <h3 style={{ marginBottom: "16px" }}>No graffitis yet!</h3>
               <p style={{ color: "#999", marginBottom: "24px" }}>Be the first to create some digital art on-chain</p>
-              <button onClick={() => window.location.href = "/create"}>✏️ Create First Graffiti</button>
+              <button onClick={() => { const u = typeof window !== "undefined" ? window.location : null; if (u) { u.href = "create"; } }}>✏️ Create First Graffiti</button>
             </div>
           )}
 

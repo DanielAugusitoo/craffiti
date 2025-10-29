@@ -8,6 +8,7 @@
     "dev": "npm run clean && npm run genabi && next dev --turbopack",
     "dev:mock": "npm run clean && npm run genabi && next dev --turbopack",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "genabi": "node ./scripts/genabi.mjs"
   },
